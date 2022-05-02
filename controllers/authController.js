@@ -4,6 +4,7 @@ export const getAuth = (req, res) => {
 }
 
 export const currentUser = async (req,res) =>{
+    console.log(req.headers.token);
     res.send(req.currentUser);
 }
 
